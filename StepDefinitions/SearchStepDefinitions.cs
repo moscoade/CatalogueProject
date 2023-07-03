@@ -17,29 +17,18 @@ namespace CatalogueProject.StepDefinitions
             driver.Navigate().GoToUrl(Url);
         }
 
-        [When(@"I add four random items to my cart")]
-        public void WhenIAddFourRandomItemsToMyCart()
+        [When(@"I add three random items to my cart")]
+        public void WhenIAddThreeRandomItemsToMyCart()
         {
             searchPage.ClickFourRandomItems();
         }
+
+        
 
         [When(@"I view my cart")]
         public void WhenIViewMyCart()
         {
             searchPage.VewMycart(); 
-        }
-
-        [When(@"I search for lowest price items")]
-        public void WhenISearchForLowestPriceItems()
-        {
-            
-        }
-
-
-        [When(@"I am able to remove the lowest price item from my cart")]
-        public void WhenIAmAbleToRemoveTheLowestPriceItemFromMyCart()
-        {
-            searchPage.LowestPriceItemRemoved();
         }
 
         [Then(@"I am able to verify three items in my cart")]
